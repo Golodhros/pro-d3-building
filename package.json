@@ -2,9 +2,10 @@
   "name": "pro-d3-building",
   "version": "1.0.0",
   "description": "Demo package for the package building chapter on Pro D3.js",
-  "main": "index.js",
+  "main": "dist/proD3Building.min.js",
   "scripts": {
-    "test": "yarn test"
+    "test": "yarn test",
+    "build": "webpack --config webpack.config.js --env=production"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/Golodhros/pro-d3-building/issues"
   },
-  "homepage": "https://github.com/Golodhros/pro-d3-building#readme"
+  "homepage": "https://github.com/Golodhros/pro-d3-building#readme",
+  "devDependencies": {
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-merge": "^4.2.1"
+  },
+  "peerDependencies": {
+    "d3": "^5.9.7"
+  }
 }
