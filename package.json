@@ -1,0 +1,25 @@
+{
+  "name": "pro-d3-building",
+  "version": "1.0.0",
+  "description": "Demo package for the package building chapter on Pro D3.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Golodhros/pro-d3-building.git"
+  },
+  "keywords": [
+    "d3.js",
+    "build",
+    "package",
+    "npm"
+  ],
+  "author": "Marcos Iglesias Valle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Golodhros/pro-d3-building/issues"
+  },
+  "homepage": "https://github.com/Golodhros/pro-d3-building#readme"
+}
