@@ -1,0 +1,14 @@
+.bar-chart {}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+    cursor: pointer;
+}
+
+.axis--x path {
+    display: none;
+}

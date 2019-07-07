@@ -1,5 +1,7 @@
 import * as d3 from 'd3';
 
+import './barChart.css';
+
 function bar() {
     let data;
     let svg;

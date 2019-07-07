@@ -1,4 +1,3 @@
-
 exports.externals = () => ({
     externals: {
         commonjs: 'd3',
@@ -10,4 +9,17 @@ exports.externals = () => ({
 exports.aliases = () => ({});
 
 // Loaders
+exports.cssLoader = () => ({
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                ]
+            },
+        ],
+    },
+});
 exports.babelLoader = () => ({});

@@ -1,5 +1,6 @@
 const path = require('path');
 const merge = require('webpack-merge');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const parts = require('./webpack.parts');
@@ -20,6 +21,7 @@ const prodBundleConfig = merge([
         },
     },
     parts.babelLoader(),
+    parts.cssLoader(),
     parts.aliases(),
     parts.externals(),
 ]);
@@ -47,6 +49,7 @@ const devConfig = merge([
             })
         ],
     },
+    parts.cssLoader(),
     parts.babelLoader(),
 ]);
 
