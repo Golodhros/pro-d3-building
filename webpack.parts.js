@@ -6,8 +6,6 @@ exports.externals = () => ({
     },
 });
 
-exports.aliases = () => ({});
-
 // Loaders
 exports.cssLoader = () => ({
     module: {

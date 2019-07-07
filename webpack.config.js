@@ -22,7 +22,6 @@ const prodBundleConfig = merge([
     },
     parts.babelLoader(),
     parts.cssLoader(),
-    parts.aliases(),
     parts.externals(),
 ]);
 
