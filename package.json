@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "description": "Demo package for the package building chapter on Pro D3.js",
   "main": "dist/proD3Building.min.js",
+  "browserslist": "defaults, IE 10",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "debug": true
+        }
+      ]
+    ]
+  },
   "scripts": {
     "test": "karma start --env=test",
     "dev": "webpack-dev-server --env=dev",
@@ -25,6 +36,9 @@
   },
   "homepage": "https://github.com/Golodhros/pro-d3-building#readme",
   "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
     "d3": "^5.9.7",
     "html-webpack-plugin": "^3.2.0",
