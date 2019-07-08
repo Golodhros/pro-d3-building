@@ -20,4 +20,31 @@ exports.cssLoader = () => ({
         ],
     },
 });
-exports.babelLoader = () => ({});
+exports.babelLoader = () => ({
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ['babel-loader'],
+            },
+        ],
+    },
+});
+exports.istanbulLoader = () => ({
+    module: {
+        rules: [
+            {
+                test: /\.js?$/,
+                include: /src/,
+                exclude: /(node_modules|__tests__|tests_index.js)/,
+                use: [{
+                    loader: 'istanbul-instrumenter-loader',
+                    query: {
+                        esModules: true
+                    }
+                }],
+            }
+        ]
+    }
+});

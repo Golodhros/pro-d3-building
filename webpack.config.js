@@ -52,10 +52,30 @@ const devConfig = merge([
     parts.babelLoader(),
 ]);
 
+const testConfig = merge([
+    {
+        mode: 'development',
+        devtool: 'inline-source-map',
+        resolve: {
+            modules: [
+                path.resolve(__dirname, 'src/charts'),
+                'node_modules',
+            ],
+        },
+    },
+    parts.cssLoader(),
+    parts.babelLoader(),
+    parts.istanbulLoader(),
+]);
+
 module.exports = (env) => {
 
     if (env === 'dev') {
         return devConfig;
+    }
+
+    if (env === 'test') {
+        return testConfig;
     }
 
     if (env === 'production') {
