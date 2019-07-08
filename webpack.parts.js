@@ -20,5 +20,22 @@ exports.cssLoader = () => ({
         ],
     },
 });
+exports.istanbulLoader = () => ({
+    module: {
+        rules: [
+            {
+                test: /\.js?$/,
+                include: /src/,
+                exclude: /(node_modules|tests.webpack.js)/,
+                use: [{
+                    loader: 'istanbul-instrumenter-loader',
+                    query: {
+                        esModules: true
+                    }
+                }],
+            }
+        ]
+    }
+});
 exports.babelLoader = () => ({
 });

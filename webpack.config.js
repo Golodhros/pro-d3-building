@@ -65,6 +65,7 @@ const testConfig = merge([
     },
     parts.cssLoader(),
     parts.babelLoader(),
+    parts.istanbulLoader(),
 ]);
 
 module.exports = (env) => {
