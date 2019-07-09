@@ -17,5 +17,10 @@ node_modules
 # OSX
 .DS_Store
 
-# Dist
-dist
+# Tooling
+karma.conf.js
+package-lock.json
+webpack.*.js
+yarn.lock
+
+coverage
