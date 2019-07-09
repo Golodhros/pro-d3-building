@@ -1,11 +1,11 @@
 .bar-chart {}
 
 .bar {
-    fill: steelblue;
+    fill: indigo;
 }
 
 .bar:hover {
-    fill: brown;
+    fill: mediumpurple;
     cursor: pointer;
 }
 
