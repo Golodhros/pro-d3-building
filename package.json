@@ -1,6 +1,6 @@
 {
   "name": "pro-d3-building",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Demo package for the package building chapter on Pro D3.js",
   "main": "dist/proD3Building.min.js",
   "browserslist": "defaults, IE 10",
